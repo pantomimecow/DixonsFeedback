@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+    display:block;
+}
+body{
+    line-height:1;
+}
+ol,ul{
+    list-style:none;
+}
+blockquote,q{
+    quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+    content:’’;
+    content:none;
+}
+/* remember to define visible focus styles! 
+:focus{
+    outline:?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins{
+    text-decoration:none;
+}
+del{
+    text-decoration:line-through;
+}
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+
+
+
+
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+
+
+
+h1 {
+	color:#ffffff;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-align:center;
+	padding-top:90px;
+	font-size:35px;
+}
+
+h1 span {color:#008da8;}
+
+h2 {
+	text-align:center;
+	color: #011c57;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size:35px;
+	margin-top:130px;
+
+}
+
+
+.container {
+	margin-top:30px;
+	margin:0 auto;
+	overflow: auto;
+}
+
+#first {background-color:#011c57;}
+#second {background-color: #d4dde8;}	
+#third {background-color: #aabcd1;}	
+#fourth {background-color: #cdd8e4;}	
+#fifth {background-color: #bfccdd;}	
+#sixth {background-color: #011c57;}	
+#seventh {background-color: #95abc6;}	
+#eighth {background-color: #95abc6;}	
+#nineth {background-color: #bfcddd;}	
+#tenth {background-color: #ebeff4;}	
+
+/*#fifth, div#seventh {background: #c7c7c7;}*/
+#sixth, #eigth, #nineth, #tenth {display: none;}
+
+.box {
+	height:320px;
+	background: #e5e5e5;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:320px;
+	position:relative;
+	float:none;
+}
+
+.box img {
+	display:block;
+	margin:auto;
+	position: absolute;
+ 	top: 50%;
+  	left: 50%;
+	margin-left:-80px;
+	margin-top:-107px;
+}
+
+#first img, #sixth img {
+	position: inherit;
+	margin:0 auto;
+	top:0;
+	left:0;
+	padding-top:90px
+}
+
+#second img {
+	margin-left:-70px
+}
+
+#third img {
+	margin-left:-59px;
+}
+
+
+@media only screen and (min-width: 770px)  {
+	#first {display:none;}
+	#sixth, #eigth, #nineth, #tenth {display: block;}
+	.box {margin: 0;
+    float: left;
+    width: 33%;
+	min-width:300px}
+	#first {float:left;}
+	.container {max-width:960px; width:100%}
+	
+}
